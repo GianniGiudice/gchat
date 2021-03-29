@@ -9,6 +9,13 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
     // your config should go here
+    apiKey: "AIzaSyCTOcgbLMMJzHXD6vRxlDh8tj1oU5u7cFY",
+    authDomain: "gchat-1e0e9.firebaseapp.com",
+    projectId: "gchat-1e0e9",
+    storageBucket: "gchat-1e0e9.appspot.com",
+    messagingSenderId: "695574937338",
+    appId: "1:695574937338:web:27b090015f5cc8d3fc1343",
+    measurementId: "G-FF74RTVHZS"
 })
 
 const auth = firebase.auth();
