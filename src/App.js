@@ -47,8 +47,7 @@ function SignIn() {
                 <img className="w-5 mr-2 block" src={process.env.PUBLIC_URL + '/google-icon.svg'} alt='Google Icon' />
                 <span className="block">Sign In With Google</span>
             </button>
-            <p className="text-white text-opacity-50 text-center hover:text-opacity-100 text-sm">'cause I was too lazy to set up a better auth system </p>
-            <p className="justify-self-end mt-auto text-white text-center text-opacity-50 hover:text-opacity-100">Made by <a className="hover:text-yellow-500" href="https://github.com/volt9801">⚡volt9801</a> w/ inspiration from <a className="hover:text-red-500" href="https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA">🔥Fireship</a></p>
+            <p className="justify-self-end mt-auto text-white text-center text-opacity-50 hover:text-opacity-100">Made by <a className="hover:text-yellow-500" href="https://github.com/GianniGiudice">⚡Gianni GIUDICE</a>.</p>
         </div>
     )
 }
@@ -56,7 +55,7 @@ function SignIn() {
 function SignOut() {
     return auth.currentUser && (
         <div className="w-full">
-            <button className="absolute hover:shadow-xl hover:text-pink-900 transition-all duration-75 ease-in-out rounded-full p-2 bg-white signout-btn material-icons" onClick={() => auth.signOut()}>exit_to_app</button>
+            <button className="absolute hover:shadow-xl hover:text-blue-900 transition-all duration-75 ease-in-out rounded-full p-2 bg-white signout-btn material-icons" onClick={() => auth.signOut()}>exit_to_app</button>
         </div>
     )
 }
@@ -101,7 +100,7 @@ function ChatRoom() {
 
             <form onSubmit={sendMessage} className="pt-3 w-full inline-flex">
                 <input className="rounded-3xl px-3 w-full py-1 outline-none focus:shadow" value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Say something" />
-                <button className={`material-icons p-2 mx-2 bg-white rounded-full transition-all duration-75 ease-in-out text-xl ${!formValue || 'text-pink-700 hover:text-pink-900'}`} type="submit" disabled={!formValue}>send</button>
+                <button className={`material-icons p-2 mx-2 bg-white rounded-full transition-all duration-75 ease-in-out text-xl ${!formValue || 'text-blue-700 hover:text-blue-900'}`} type="submit" disabled={!formValue}>send</button>
             </form>
         </div>
     )
