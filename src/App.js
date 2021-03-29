@@ -38,12 +38,13 @@ const SignIn = () => {
     }
     return (
         <div className="flex flex-col h-screen items-center justify-center">
-            <div className="pt-5 text-center font-bold text-5xl text-white">GChat</div>
+            <div className="pt-12 text-center font-bold text-5xl text-white">GChat</div>
             <button className="mt-auto bg-white outline-none focus:outline-none p-2 m-3 border-b-4 border-gray-500 hover:bg-gray-200 hover:border-gray-500 transition-all duration-75 ease-in-out rounded inline-flex items-center" onClick={signInWithGoogle}>
                 <img className="w-5 mr-2 block" src={process.env.PUBLIC_URL + '/google-icon.svg'} alt='Google Icon' />
                 <span className="block">Sign In With Google</span>
             </button>
-            <p className="justify-self-end mt-auto mb-5 text-white text-center text-opacity-50 hover:text-opacity-100">Made by <a className="hover:text-yellow-500" href="https://github.com/GianniGiudice">⚡Gianni GIUDICE</a>.</p>
+            <p className="text-white text-opacity-50 text-center hover:text-opacity-100 text-sm">Real-Time Chat App made with React and Firebase</p>
+            <p className="justify-self-end mt-auto mb-5 text-white text-center text-opacity-50 hover:text-opacity-100">Made with ❤ by <a className="hover:text-yellow-500" href="https://github.com/GianniGiudice">Gianni GIUDICE</a>.</p>
         </div>
     )
 };
